@@ -1,7 +1,7 @@
 import * as cors from 'cors';
 import * as express from 'express';
 
-import routes from './routes/TestRoutes';
+import routes from './routes/FooRoutes';
 
 class App {
   public express: express.Application;
