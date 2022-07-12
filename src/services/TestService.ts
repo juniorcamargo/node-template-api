@@ -1,4 +1,7 @@
-class TestService {
+export interface ITestService {
+  index(): Promise<string>;
+}
+class TestService implements ITestService {
   private message: string;
 
   public async index(): Promise<string> {
@@ -7,4 +10,4 @@ class TestService {
   }
 }
 
-export default TestService;
+export { TestService };
