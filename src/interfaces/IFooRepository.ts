@@ -1,3 +1,3 @@
 export interface IFooRepository {
-  index(phrase?: string): string;
+  index(phrase?: string): Promise<string>;
 }

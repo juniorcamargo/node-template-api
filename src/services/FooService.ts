@@ -1,6 +1,8 @@
+import FooRepository from '../repositories/FooRepository';
+
 import { IFooRepository } from '@/interfaces/IFooRepository';
 import { IFooService } from '@/interfaces/IFooService';
-import FooRepository from '../repositories/FooRepository';
+
 export class FooService implements IFooService {
   constructor(private readonly repository?: IFooRepository) {}
 

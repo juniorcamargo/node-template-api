@@ -1,6 +1,8 @@
 import { Request, Response } from 'express';
 
-import FooService, { IFooService } from '../services/FooService';
+import FooService from '../services/FooService';
+
+import { IFooService } from '@/interfaces/IFooService';
 
 class FooController {
   constructor(private readonly service: IFooService) {}

@@ -1,8 +1,8 @@
-import { IFooRepository } from "@/interfaces/IFooRepository";
+import { IFooRepository } from '@/interfaces/IFooRepository';
 
 export class FooRepository implements IFooRepository {
-  public index(phrase: string): string {
-    return `Hellow World. This is my node template api. ${phrase}`;
+  public index(phrase: string): Promise<string> {
+    return Promise.resolve(`Hellow World. This is my node template api. ${phrase}`);
   }
 }
 
