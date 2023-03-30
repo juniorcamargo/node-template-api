@@ -1,8 +1,6 @@
-import FooRepository, { IFooRepository } from '../repositories/FooRepository';
-
-export interface IFooService {
-  index(phrase?: string): Promise<string>;
-}
+import { IFooRepository } from '@/interfaces/IFooRepository';
+import { IFooService } from '@/interfaces/IFooService';
+import FooRepository from '../repositories/FooRepository';
 export class FooService implements IFooService {
   constructor(private readonly repository?: IFooRepository) {}
 
